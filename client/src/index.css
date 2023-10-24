@@ -55,7 +55,7 @@ button {
   border: 3px solid white;
   border-radius: 15px;
   margin-top: 10px;
-  overflow: auto;
+  overflow: scroll;
 
 }
 
