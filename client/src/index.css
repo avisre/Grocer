@@ -44,7 +44,7 @@ button {
 
 .Items {
   width: 95%;
-height:60vh;
+
   backdrop-filter: blur(55px);
   display: flex;
   flex-direction: column;
