@@ -11,14 +11,14 @@ function App() {
   const [editMode, setEditMode] = useState({});
 
   useEffect(() => {
-    Axios.get('http://localhost:5000/read').then((response) => {
+    Axios.get('https://grocery-pbvd.onrender.com/read').then((response) => {
       setList(response.data);
     });
   }, []);
 
   const add = async () => {
-    await Axios.post('http://localhost:5000/insert', { count: count, num: num, metric: metric });
-    const response = await Axios.get('http://localhost:5000/read');
+    await Axios.post('https://grocery-pbvd.onrender.com/insert', { count: count, num: num, metric: metric });
+    const response = await Axios.get('https://grocery-pbvd.onrender.com/read');
     setList(response.data);
     setCount('');
     setNum(0);
@@ -27,8 +27,8 @@ function App() {
 
   const updateFood = async (id) => {
     try {
-      await Axios.put('http://localhost:5000/update', { id: id, name: name });
-      const response = await Axios.get('http://localhost:5000/read');
+      await Axios.put('https://grocery-pbvd.onrender.com/update', { id: id, name: name });
+      const response = await Axios.get('https://grocery-pbvd.onrender.com/read');
       setList(response.data);
       setEditMode({ ...editMode, [id]: false });
       setName('');
@@ -39,8 +39,8 @@ function App() {
 
   const deleteFood = async (id) => {
     try {
-      await Axios.delete(`http://localhost:5000/delete/${id}`);
-      const response = await Axios.get('http://localhost:5000/read');
+      await Axios.delete(`https://grocery-pbvd.onrender.com/delete/${id}`);
+      const response = await Axios.get('https://grocery-pbvd.onrender.com/read');
       setList(response.data);
     } catch (error) {
       console.error('Error deleting food:', error);
