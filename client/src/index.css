@@ -34,7 +34,7 @@ body {
   border: 3px solid white;
   border-radius: 15px;
   backdrop-filter: blur(55px);
-overflow:scroll;
+
 }
 
 button {
