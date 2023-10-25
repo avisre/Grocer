@@ -237,13 +237,28 @@ input:focus,
 
 @media only screen and (max-width: 768px) {
 
-.App,
+  .App,
   .Items {
     width: 80%;
     /* Adjust width for smaller screens */
-
+    padding: 2px;
     /* Adjust padding for smaller screens */
   }
+
+  button {
+    background-color: black;
+    color: white;
+    margin-left: 5px;
+  }
+
+  input[type="text"] {
+
+    background-color: #000;
+    /* Text color */
+    color: #f0f0f0;
+    /* Background color */
+  }
+
   .App {
     height: 36vh;
     display: flex;
@@ -254,15 +269,8 @@ input:focus,
 
   .Item {
     width: 90%;
-    color:white;
-  }
 
-   button {
-    background-color: black;
-    color: white;
   }
-
-  
 
   h1 {
     font-size: 2em;
@@ -275,15 +283,14 @@ input:focus,
     margin-top: 10px;
   }
 
-  input[type="text"],
-  input[type="number"],
-  input[type="email"],
-  .Custom {
-    width: 30%;
-background-color: #000;
-    /* Text color */
-    color: #f0f0f0;
-    /* Background color */
+  input[type="number"] {
+    width: 10%;
+    height: 5%;
+  }
+
+  .Sm {
+    width: 20%;
+
     /* Adjust input width for smaller screens */
   }
 
