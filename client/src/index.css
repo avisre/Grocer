@@ -261,13 +261,7 @@ input:focus,
     color: white;
   }
 
-  input[type="text"] {
-
-    background-color: #000;
-    /* Text color */
-    color: #f0f0f0;
-    /* Background color */
-  }
+  
 
   h1 {
     font-size: 2em;
@@ -285,7 +279,10 @@ input:focus,
   input[type="email"],
   .Custom {
     width: 30%;
-
+background-color: #000;
+    /* Text color */
+    color: #f0f0f0;
+    /* Background color */
     /* Adjust input width for smaller screens */
   }
 
