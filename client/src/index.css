@@ -23,6 +23,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin: 0 auto;
 }
 
 .Header {
@@ -31,19 +32,20 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
 
 }
 
 .Header>img {
   height: 3rem;
-  margin-top: 2.4rem;
+
 }
 
 
 
 
 .App {
-  width: 95%;
+  width: 85%;
   height: 25%;
   padding: 10px;
 
@@ -51,6 +53,7 @@ body {
   border: 3px solid white;
   border-radius: 15px;
   backdrop-filter: blur(55px);
+  margin: 0 auto;
 
 }
 
@@ -60,7 +63,7 @@ button {
 
 
 .Items {
-  width: 95%;
+  width: 85%;
   height: 20rem;
   backdrop-filter: blur(55px);
   display: flex;
@@ -71,13 +74,15 @@ button {
 
   border: 3px solid white;
   border-radius: 15px;
+
+  overflow-y: scroll;
+  margin: 0 auto;
   margin-top: 10px;
-  overflow: scroll;
 
 }
 
 .Item {
-  width: 95%;
+  width: 65%;
 
 
 
@@ -233,15 +238,14 @@ input:focus,
 
   .App,
   .Items {
-    width: 85%;
+    width: 75%;
     /* Adjust width for smaller screens */
-    margin-left: 8px;
+    padding: 2px;
     /* Adjust padding for smaller screens */
   }
 
   .App {
-    width: 85vw;
-    height: 50vh;
+    height: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -281,7 +285,7 @@ input:focus,
   }
 
   .Header>img {
-    height: 3rem;
-    margin-top: 0.5rem;
+    height: 2rem;
+
   }
 }
