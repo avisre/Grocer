@@ -63,7 +63,7 @@ function App() {
   return (
     <>
       <div className='Header'>
-        <h1>Grocers</h1><img src='/Assets/kitchen.svg' alt='Kitchen Icon' />
+        <h1>Grocers</h1>
       </div>
       <div className="App">
         <label htmlFor="name">Enter Food Item</label>
