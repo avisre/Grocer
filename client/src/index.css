@@ -25,6 +25,23 @@ body {
   text-align: center;
 }
 
+.Header {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.Header>img {
+  height: 3rem;
+  margin-top: 2.4rem;
+}
+
+
+
+
 .App {
   width: 95%;
   height: 25%;
@@ -44,11 +61,11 @@ button {
 
 .Items {
   width: 95%;
-height:60vh;
+  height: 20rem;
   backdrop-filter: blur(55px);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+
   align-items: center;
   padding: 10px;
 
@@ -61,7 +78,7 @@ height:60vh;
 
 .Item {
   width: 95%;
-  height: auto;
+
 
 
   border: 3px solid white;
@@ -216,13 +233,14 @@ input:focus,
 
   .App,
   .Items {
-    width: 90%;
+    width: 85%;
     /* Adjust width for smaller screens */
-    padding: 5px;
+    margin-left: 8px;
     /* Adjust padding for smaller screens */
   }
 
   .App {
+    width: 85vw;
     height: 50vh;
     display: flex;
     flex-direction: column;
@@ -260,5 +278,10 @@ input:focus,
 
   button:nth-of-type(1) {
     margin-top: 10px;
+  }
+
+  .Header>img {
+    height: 3rem;
+    margin-top: 0.5rem;
   }
 }
