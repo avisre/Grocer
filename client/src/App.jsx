@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import Axios from 'axios';
-import './App.css';
+import './index.css';
 
 function App() {
   const [count, setCount] = useState('');
@@ -49,7 +49,8 @@ function App() {
 
   return (
     <>
-      <h1>Grocers</h1>
+      <div className='Header'>
+        <h1>Grocers</h1><img src='/Assets/kitchen.svg'></img> </div>
       <div className="App">
 
         <label htmlFor="name">Enter Food Item</label>
@@ -89,7 +90,9 @@ function App() {
         </select>
         <button onClick={add}>Add</button>
       </div>
+
       <div className='Items'>
+        <h2>Grocery List</h2>
         {list.map((d, index) => {
           return (
             <div className='Item' key={d._id}>
