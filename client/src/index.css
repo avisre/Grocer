@@ -256,6 +256,19 @@ input:focus,
     width: 90%;
   }
 
+   button {
+    background-color: black;
+    color: white;
+  }
+
+  input[type="text"] {
+
+    background-color: #000;
+    /* Text color */
+    color: #f0f0f0;
+    /* Background color */
+  }
+
   h1 {
     font-size: 2em;
     /* Decrease font size for smaller screens */
