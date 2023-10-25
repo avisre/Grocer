@@ -83,7 +83,7 @@ function App() {
             setMetric(e.target.value);
           }}
         >
-          <option value=''>Select One</option>
+          <option value=''>Select</option>
           <option value="Kg">Kg</option>
           <option value="L">L</option>
           <option value="Nos">Nos</option>
