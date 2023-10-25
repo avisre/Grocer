@@ -237,7 +237,13 @@ input:focus,
 
 @media only screen and (max-width: 768px) {
 
+.App,
+  .Items {
+    width: 100%;
+    /* Adjust width for smaller screens */
 
+    /* Adjust padding for smaller screens */
+  }
   .App {
     height: 36vh;
     display: flex;
