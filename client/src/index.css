@@ -2,6 +2,7 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  min-height: 100vh;
   background-image: url('/Assets/grocery-min.jpg');
   background-position: center;
   background-size: cover;
@@ -245,7 +246,7 @@ input:focus,
   }
 
   .App {
-    height: 30vh;
+    height: 36vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -253,7 +254,7 @@ input:focus,
   }
 
   .Item {
-    width: 240px;
+    width: 90%;
   }
 
   h1 {
@@ -288,4 +289,6 @@ input:focus,
     height: 2rem;
 
   }
+
+
 }
