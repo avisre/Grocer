@@ -82,17 +82,19 @@ button {
 
 }
 
-.Item {
+
+ .Item {
   width: 65%;
-
-
-
+background-color: #9d4edd;
+color: white;
   border: 3px solid white;
   border-radius: 15px;
 
   margin-top: 10px;
 
 }
+
+
 
 a {
   font-weight: 100;
