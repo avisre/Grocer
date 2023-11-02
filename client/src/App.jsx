@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import grocer from '../Assets/shopping-bag.png'
 import Axios from 'axios';
 import './index.css';
 
@@ -13,18 +14,18 @@ function App() {
   const [editMetric, setEditMetric] = useState('');
 
   useEffect(() => {
-    Axios.get('https://grocery-pbvd.onrender.com/read').then((response) => {
+    Axios.get('https://cyan-mushy-panther.cyclic.app/read').then((response) => {
       setList(response.data);
     });
   }, []);
 
   const add = async () => {
-    await Axios.post('https://grocery-pbvd.onrender.com/insert', {
+    await Axios.post('https://cyan-mushy-panther.cyclic.app/insert', {
       count: count,
       num: num,
       metric: metric
     });
-    const response = await Axios.get('https://grocery-pbvd.onrender.com/read');
+    const response = await Axios.get('https://cyan-mushy-panther.cyclic.app/read');
     setList(response.data);
     setCount('');
     setNum(0);
@@ -33,13 +34,13 @@ function App() {
 
   const updateFood = async (id) => {
     try {
-      await Axios.put('https://grocery-pbvd.onrender.com/update', {
+      await Axios.put('https://cyan-mushy-panther.cyclic.app/update', {
         id: id,
         name: name,
         quantity: editQuantity,
         metric: editMetric
       });
-      const response = await Axios.get('https://grocery-pbvd.onrender.com/read');
+      const response = await Axios.get('https://cyan-mushy-panther.cyclic.app/read');
       setList(response.data);
       setEditMode({ ...editMode, [id]: false });
       setName('');
@@ -52,8 +53,8 @@ function App() {
 
   const deleteFood = async (id) => {
     try {
-      await Axios.delete(`https://grocery-pbvd.onrender.com/delete/${id}`);
-      const response = await Axios.get('https://grocery-pbvd.onrender.com/read');
+      await Axios.delete(`https://cyan-mushy-panther.cyclic.app/delete/${id}`);
+      const response = await Axios.get('https://cyan-mushy-panther.cyclic.app/read');
       setList(response.data);
     } catch (error) {
       console.error('Error deleting food:', error);
@@ -63,7 +64,7 @@ function App() {
   return (
     <>
       <div className='Header'>
-        <h1>Grocers</h1>
+        <h1>Grocers</h1><img src={grocer} alt='Grocery icon' />
       </div>
       <div className="App">
         <label htmlFor="name">Enter Food Item</label>
@@ -97,6 +98,7 @@ function App() {
           <option value=''>Select One</option>
           <option value="Kg">Kg</option>
           <option value="L">L</option>
+
           <option value="Nos">Nos</option>
         </select>
         <button onClick={add}>Add</button>
@@ -107,7 +109,7 @@ function App() {
         {list.map((d, index) => {
           return (
             <div className='Item' key={d._id}>
-              {`${index + 1}.`} {`${d.foodName}`}
+              {`${index + 1}.`} {`${d.foodName[0].toUpperCase() + d.foodName.slice(1)}-`}
               {editMode[d._id] ? (
                 <>
                   <input
