@@ -63,6 +63,19 @@ button {
 }
 
 
+button {
+  background-color: black;
+  color: white;
+ 
+}
+
+input[type="text"] {
+
+  background-color: #000;
+  /* Text color */
+  color: #f0f0f0;
+  /* Background color */
+}
 .Items {
   width: 85%;
   height: 20rem;
@@ -76,25 +89,22 @@ button {
   border: 3px solid white;
   border-radius: 15px;
 
-  overflow-y: scroll;
+  overflow-y: auto;
   margin: 0 auto;
   margin-top: 10px;
 
 }
 
-
- .Item {
+.Item {
   width: 65%;
 background-color: #9d4edd;
-color: white;
+color: floralwhite;
   border: 3px solid white;
   border-radius: 15px;
 
   margin-top: 10px;
 
 }
-
-
 
 a {
   font-weight: 100;
