@@ -96,10 +96,10 @@ function App() {
           }}
         >
           <option value=''>Select One</option>
-          <option value="Kg">Kg</option>
-          <option value="L">L</option>
+          <option value="Kg.">Kg</option>
+          <option value="L.">L</option>
 
-          <option value="Nos">Nos</option>
+          <option value="Nos.">Nos</option>
         </select>
         <button onClick={add}>Add</button>
       </div>
