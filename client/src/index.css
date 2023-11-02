@@ -155,9 +155,7 @@ button:focus-visible {
   }
 
 
-  button {
-    background-color: #f9f9f9;
-  }
+
 }
 
 /* App.css */
@@ -220,14 +218,12 @@ input[type="text"],
 input[type="number"],
 input[type="email"],
 .Custom {
-  padding: 5px;
-  /* Add margin for spacing between input elements */
-  border: 2.5px solid white;
-  /* Add border for input elements */
-  border-radius: 15px;
-  /* Add border-radius for rounded corners */
-  font-size: 16px;
-  /* Set the font size */
+    padding: 5px;
+    border: 2.5px solid white;
+    border-radius: 15px;
+    font-size: 16px;
+    background-color: black;
+    color: white;
 }
 
 /* Style the placeholder text inside input elements */
