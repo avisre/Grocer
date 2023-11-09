@@ -109,7 +109,7 @@ function App() {
         {list.map((d, index) => {
           return (
             <div className='Item' key={d._id}>
-              {`${index + 1}.`} {`${d.foodName[0].toUpperCase() + d.foodName.slice(1)}-`}
+              {`${index + 1}.`} {`${d.foodName}-`}
               {editMode[d._id] ? (
                 <>
                   <input
