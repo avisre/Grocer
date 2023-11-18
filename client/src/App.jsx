@@ -76,6 +76,7 @@ function App() {
           onChange={(e) => {
             setCount(e.target.value);
           }}
+          required
         />
         <label htmlFor="num">Enter quantity</label>
         <input
