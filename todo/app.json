@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "Grocers",
+    "slug": "Grocers",
+    "version": "1.0.0",
+    "privacy": "public",
+    "Description": "Online Grocery Tracker",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/appicon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "grocers"
+    },
+    "android": {
+      "package": "ttpc.grocers",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/appicon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "9f3d8b7b-2b6b-4334-a8d9-469c9d500af2"
+      }
+    }
+  }
+}
